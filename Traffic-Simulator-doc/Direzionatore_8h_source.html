@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Traffic-Simulator:  File sorgente /home/alberto/GitHub/Traffic-Simulator/src/header/Direzionatore.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Traffic-Simulator
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Classi</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&#160;dei&#160;file</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8408bad1c8b66572738be7dc5ba73ab6.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Direzionatore.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Direzionatore_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DIREZIONATORE_INCLUDE</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define DIREZIONATORE_INCLUDE</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Direzione_8h.html">Direzione.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Direzione__List_8h.html">Direzione_List.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="enum__toInt_8h.html">enum_toInt.h</a>&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;ctime&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacesf.html">sf</a>;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classDirezionatore.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDirezionatore.html">Direzionatore</a></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classDirezionatore.html">Direzionatore</a>();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    ~<a class="code" href="classDirezionatore.html">Direzionatore</a>();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3">Direzione</a> estraiDirezione();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> ammettiDirezione(<a class="code" href="Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3">Direzione</a> d);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> escludiDirezione(<a class="code" href="Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3">Direzione</a> d);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> escludiDirezioni(Vector2i startPos, Vector2i endPos, <a class="code" href="Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3">Direzione</a> prevDir, Vector2i numBlocchi);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    </div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> ripristina();</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classDirezionatore.html#aa48ed37b7f81fe3ce33ee43147a5e002">   60</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="classDirezionatore.html#aa48ed37b7f81fe3ce33ee43147a5e002">count</a>()</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> dl.count();</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classDirezione__List.html">Direzione_List</a> dl;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> escludiDirezioniX(Vector2i startPos, Vector2i endPos, Vector2i border, <a class="code" href="Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3">Direzione</a> oppositeDir);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif // DIREZIONATORE_INCLUDE</span></div><div class="ttc" id="classDirezione__List_html"><div class="ttname"><a href="classDirezione__List.html">Direzione_List</a></div><div class="ttdoc">La classe Direzione_List rappresenta una lista di elementi di tipo Direzione. </div><div class="ttdef"><b>Definition:</b> Direzione_List.h:17</div></div>
+<div class="ttc" id="Direzione_8h_html"><div class="ttname"><a href="Direzione_8h.html">Direzione.h</a></div></div>
+<div class="ttc" id="namespacesf_html"><div class="ttname"><a href="namespacesf.html">sf</a></div></div>
+<div class="ttc" id="enum__toInt_8h_html"><div class="ttname"><a href="enum__toInt_8h.html">enum_toInt.h</a></div></div>
+<div class="ttc" id="Direzione__List_8h_html"><div class="ttname"><a href="Direzione__List_8h.html">Direzione_List.h</a></div></div>
+<div class="ttc" id="classDirezionatore_html_aa48ed37b7f81fe3ce33ee43147a5e002"><div class="ttname"><a href="classDirezionatore.html#aa48ed37b7f81fe3ce33ee43147a5e002">Direzionatore::count</a></div><div class="ttdeci">int count()</div><div class="ttdoc">Restituisce il numero di elementi della lista. </div><div class="ttdef"><b>Definition:</b> Direzionatore.h:60</div></div>
+<div class="ttc" id="Direzione_8h_html_a06651acb4861207008f70d64f1a6c4c3"><div class="ttname"><a href="Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3">Direzione</a></div><div class="ttdeci">Direzione</div><div class="ttdoc">La classe Direzione appresenta le quattro direzioni percorribili e, in aggiunta, anche la direzione n...</div><div class="ttdef"><b>Definition:</b> Direzione.h:6</div></div>
+<div class="ttc" id="classDirezionatore_html"><div class="ttname"><a href="classDirezionatore.html">Direzionatore</a></div><div class="ttdoc">Costituisce una sorta di interfaccia alla lista di Direzioni, regolando in modo leggermente diverso l...</div><div class="ttdef"><b>Definition:</b> Direzionatore.h:19</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato Dom 9 Ott 2016 16:43:22 per Traffic-Simulator da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>
