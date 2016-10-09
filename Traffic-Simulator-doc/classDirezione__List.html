@@ -125,7 +125,7 @@ Membri pubblici</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Descrizione dettagliata</h2>
 <div class="textblock"><p>La classe <a class="el" href="classDirezione__List.html" title="La classe Direzione_List rappresenta una lista di elementi di tipo Direzione. ">Direzione_List</a> rappresenta una lista di elementi di tipo <a class="el" href="Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3" title="La classe Direzione appresenta le quattro direzioni percorribili e, in aggiunta, anche la direzione n...">Direzione</a>. </p>
 <p>La classe tiene traccia del numero di elementi presenti nella lista.</p>
-<p>I metodi disponibili sono quelli basici delle liste: inserimento, estrazione, ricerca </p>
+<p>I metodi disponibili sono quelli basici delle liste: inserimento, estrazione, ricerca. </p>
 </div><h2 class="groupheader">Documentazione dei costruttori e dei distruttori</h2>
 <a class="anchor" id="a442ba9b667c7794179342170a0fc61b8"></a>
 <div class="memitem">
@@ -161,7 +161,7 @@ Membri pubblici</h2></td></tr>
 <p>Costruttore che inizializza una lista con un elemento passato per parametro. </p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
-    <tr><td class="paramname">r</td><td>Elemento iniziale </td></tr>
+    <tr><td class="paramname">r</td><td>Elemento iniziale. </td></tr>
   </table>
   </dd>
 </dl>
@@ -260,12 +260,12 @@ Membri pubblici</h2></td></tr>
 <p>È necessario indicare se l'elemento deve essere rimosso o mantenuto.</p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>Indice nella lista dell'elemento </td></tr>
-    <tr><td class="paramname">del</td><td>True se l'elemento deve essere cancellato. False altrimenti </td></tr>
+    <tr><td class="paramname">index</td><td>Indice nella lista dell'elemento. </td></tr>
+    <tr><td class="paramname">del</td><td>True se l'elemento deve essere cancellato. False altrimenti. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Restituisce</dt><dd>Se l'elemento esiste nella lista, lo restituisce. Altrimenti restiuisce la direzione nulla </dd></dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Se l'elemento esiste nella lista, lo restituisce. Altrimenti restiuisce la direzione nulla. </dd></dl>
 <div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> (index &gt;= num_nodi)</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3a9a116c50d133c8648404081885194300">Direzione::ND</a>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="structDirezione__Node.html">Direzione_Node</a> *t = root;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="structDirezione__Node.html">Direzione_Node</a> *previous = NULL;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; index; i++) {</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        previous = t;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        t = t-&gt;<a class="code" href="structDirezione__Node.html#a105a2d1724d837ddadf82e021b998474">next</a>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3">Direzione</a> temp = t-&gt;<a class="code" href="structDirezione__Node.html#a04831b87702186fa896dddc318b93499">node</a>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span> (del) {</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">if</span> (t == root)</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            root = t-&gt;<a class="code" href="structDirezione__Node.html#a105a2d1724d837ddadf82e021b998474">next</a>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">else</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            previous-&gt;<a class="code" href="structDirezione__Node.html#a105a2d1724d837ddadf82e021b998474">next</a> = t-&gt;<a class="code" href="structDirezione__Node.html#a105a2d1724d837ddadf82e021b998474">next</a>;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">delete</span> t;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        num_nodi--;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        </div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> temp;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div><div class="ttc" id="structDirezione__Node_html"><div class="ttname"><a href="structDirezione__Node.html">Direzione_Node</a></div><div class="ttdoc">Struttura che rappresenta il singolo nodo della lista. </div><div class="ttdef"><b>Definition:</b> Direzione_List.h:7</div></div>
 <div class="ttc" id="Direzione_8h_html_a06651acb4861207008f70d64f1a6c4c3a9a116c50d133c8648404081885194300"><div class="ttname"><a href="Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3a9a116c50d133c8648404081885194300">Direzione::ND</a></div></div>
 <div class="ttc" id="structDirezione__Node_html_a04831b87702186fa896dddc318b93499"><div class="ttname"><a href="structDirezione__Node.html#a04831b87702186fa896dddc318b93499">Direzione_Node::node</a></div><div class="ttdeci">Direzione node</div><div class="ttdef"><b>Definition:</b> Direzione_List.h:8</div></div>
@@ -302,12 +302,12 @@ Membri pubblici</h2></td></tr>
 <p>È necessario indicare se l'elemento deve essere rimosso o mantenuto.</p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
-    <tr><td class="paramname">d</td><td>Direzione da cercare </td></tr>
-    <tr><td class="paramname">del</td><td>True se l'elemento deve essere cancellato. False altrimenti </td></tr>
+    <tr><td class="paramname">d</td><td>Direzione da cercare. </td></tr>
+    <tr><td class="paramname">del</td><td>True se l'elemento deve essere cancellato. False altrimenti. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Restituisce</dt><dd>Se l'elemento esiste nella lista, lo restituisce. Altrimenti restiuisce la direzione nulla </dd></dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Se l'elemento esiste nella lista, lo restituisce. Altrimenti restiuisce la direzione nulla. </dd></dl>
 <div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="structDirezione__Node.html">Direzione_Node</a> *t = root;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="structDirezione__Node.html">Direzione_Node</a> *previous = NULL;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (t == NULL) <span class="keywordflow">return</span> <a class="code" href="Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3a9a116c50d133c8648404081885194300">Direzione::ND</a>;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">while</span> (t != NULL &amp;&amp; (t-&gt;<a class="code" href="structDirezione__Node.html#a04831b87702186fa896dddc318b93499">node</a> != d))</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        previous = t;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        t = t-&gt;<a class="code" href="structDirezione__Node.html#a105a2d1724d837ddadf82e021b998474">next</a>;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> (t != NULL)</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3">Direzione</a> temp = t-&gt;<a class="code" href="structDirezione__Node.html#a04831b87702186fa896dddc318b93499">node</a>;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">if</span> (del)</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        {</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">if</span> (t == root)</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                root = t-&gt;<a class="code" href="structDirezione__Node.html#a105a2d1724d837ddadf82e021b998474">next</a>;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">else</span></div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                previous-&gt;<a class="code" href="structDirezione__Node.html#a105a2d1724d837ddadf82e021b998474">next</a> = t-&gt;<a class="code" href="structDirezione__Node.html#a105a2d1724d837ddadf82e021b998474">next</a>;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keyword">delete</span> t;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            num_nodi--;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span> temp;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3a9a116c50d133c8648404081885194300">Direzione::ND</a>;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div><div class="ttc" id="structDirezione__Node_html"><div class="ttname"><a href="structDirezione__Node.html">Direzione_Node</a></div><div class="ttdoc">Struttura che rappresenta il singolo nodo della lista. </div><div class="ttdef"><b>Definition:</b> Direzione_List.h:7</div></div>
 <div class="ttc" id="Direzione_8h_html_a06651acb4861207008f70d64f1a6c4c3a9a116c50d133c8648404081885194300"><div class="ttname"><a href="Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3a9a116c50d133c8648404081885194300">Direzione::ND</a></div></div>
 <div class="ttc" id="structDirezione__Node_html_a04831b87702186fa896dddc318b93499"><div class="ttname"><a href="structDirezione__Node.html#a04831b87702186fa896dddc318b93499">Direzione_Node::node</a></div><div class="ttdeci">Direzione node</div><div class="ttdef"><b>Definition:</b> Direzione_List.h:8</div></div>
@@ -333,7 +333,7 @@ Membri pubblici</h2></td></tr>
 <p>Inserisce un elemento nella lista. </p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
-    <tr><td class="paramname">r</td><td>Elemento da inserire </td></tr>
+    <tr><td class="paramname">r</td><td>Elemento da inserire. </td></tr>
   </table>
   </dd>
 </dl>
@@ -350,7 +350,7 @@ Membri pubblici</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generato Dom 9 Ott 2016 16:43:22 per Traffic-Simulator da &#160;<a href="http://www.doxygen.org/index.html">
+Generato Dom 9 Ott 2016 21:31:02 per Traffic-Simulator da &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -92,7 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
 </div><!--header-->
 <div class="contents">
 
-<p>La classe <a class="el" href="classMacchina.html" title="La classe Macchina rappresenta il veicolo che viene posizionato sulla map. ">Macchina</a> rappresenta il veicolo che viene posizionato sulla map.  
+<p>La classe <a class="el" href="classMacchina.html" title="La classe Macchina rappresenta il veicolo che viene posizionato sulla mappa. ">Macchina</a> rappresenta il veicolo che viene posizionato sulla mappa.  
  <a href="classMacchina.html#details">Continua...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Macchina_8h_source.html">Macchina.h</a>&gt;</code></p>
@@ -106,6 +106,7 @@ Membri pubblici</h2></td></tr>
 <tr class="memdesc:a23bcbc7adcadc041be7a572544065d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Costruttore che inizializza una macchina alla posizione specificata.  <a href="#a23bcbc7adcadc041be7a572544065d98">Continua...</a><br /></td></tr>
 <tr class="separator:a23bcbc7adcadc041be7a572544065d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21b3b6ab39d9383c30b721342d099f5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMacchina.html#a21b3b6ab39d9383c30b721342d099f5a">~Macchina</a> ()</td></tr>
+<tr class="memdesc:a21b3b6ab39d9383c30b721342d099f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distruttore.  <a href="#a21b3b6ab39d9383c30b721342d099f5a">Continua...</a><br /></td></tr>
 <tr class="separator:a21b3b6ab39d9383c30b721342d099f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc4c7aa44b378cea9607511eec89149c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMacchina.html#abc4c7aa44b378cea9607511eec89149c">draw</a> (RenderWindow &amp;widget)</td></tr>
 <tr class="memdesc:abc4c7aa44b378cea9607511eec89149c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disegna sul widget la macchina.  <a href="#abc4c7aa44b378cea9607511eec89149c">Continua...</a><br /></td></tr>
@@ -117,6 +118,7 @@ Membri pubblici</h2></td></tr>
 <tr class="memdesc:a4af3af8e4481f82a410a46c6f08ea0c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imposta il colore della macchina col colore passato come parametro.  <a href="#a4af3af8e4481f82a410a46c6f08ea0c6">Continua...</a><br /></td></tr>
 <tr class="separator:a4af3af8e4481f82a410a46c6f08ea0c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabfd6d2e115acc5edeaf1ab56de9ad55"><td class="memItemLeft" align="right" valign="top">RectangleShape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMacchina.html#aabfd6d2e115acc5edeaf1ab56de9ad55">getShape</a> ()</td></tr>
+<tr class="memdesc:aabfd6d2e115acc5edeaf1ab56de9ad55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restituisce lo sprite della macchina.  <a href="#aabfd6d2e115acc5edeaf1ab56de9ad55">Continua...</a><br /></td></tr>
 <tr class="separator:aabfd6d2e115acc5edeaf1ab56de9ad55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac56408020c0881ca5306069a9ea05134"><td class="memItemLeft" align="right" valign="top">Vector2i&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMacchina.html#ac56408020c0881ca5306069a9ea05134">getPosition</a> ()</td></tr>
 <tr class="memdesc:ac56408020c0881ca5306069a9ea05134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restituisce un Vector2i che contiene le coordinate.  <a href="#ac56408020c0881ca5306069a9ea05134">Continua...</a><br /></td></tr>
@@ -149,36 +151,37 @@ Attributi pubblici</h2></td></tr>
 <tr class="memdesc:adb7a95146b25e30ef879447026251b87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Percorso che la macchina deve seguire.  <a href="#adb7a95146b25e30ef879447026251b87">Continua...</a><br /></td></tr>
 <tr class="separator:adb7a95146b25e30ef879447026251b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87cd9fca72db23ac2a652ead829935d6"><td class="memItemLeft" align="right" valign="top">Vector2i&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMacchina.html#a87cd9fca72db23ac2a652ead829935d6">currentBlock</a></td></tr>
+<tr class="memdesc:a87cd9fca72db23ac2a652ead829935d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coordinate del blocco su cui si trova la macchina.  <a href="#a87cd9fca72db23ac2a652ead829935d6">Continua...</a><br /></td></tr>
 <tr class="separator:a87cd9fca72db23ac2a652ead829935d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add50357ff8c3517a96307d59c209c6e6"><td class="memItemLeft" align="right" valign="top">Vector2i&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMacchina.html#add50357ff8c3517a96307d59c209c6e6">nextBlock</a></td></tr>
+<tr class="memdesc:add50357ff8c3517a96307d59c209c6e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coordinate del blocco da raggiungere.  <a href="#add50357ff8c3517a96307d59c209c6e6">Continua...</a><br /></td></tr>
 <tr class="separator:add50357ff8c3517a96307d59c209c6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac670638e99a32d4d13723b90a7c3894c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3">Direzione</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMacchina.html#ac670638e99a32d4d13723b90a7c3894c">nextDir</a></td></tr>
+<tr class="memdesc:ac670638e99a32d4d13723b90a7c3894c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direzione che dovrà intraprendere per raggiungere il prossimo blocco.  <a href="#ac670638e99a32d4d13723b90a7c3894c">Continua...</a><br /></td></tr>
 <tr class="separator:ac670638e99a32d4d13723b90a7c3894c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b49e5dc15d04ad4a6fe29c61cfac0e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3">Direzione</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMacchina.html#a3b49e5dc15d04ad4a6fe29c61cfac0e8">currentDir</a></td></tr>
+<tr class="memdesc:a3b49e5dc15d04ad4a6fe29c61cfac0e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direzione corrente.  <a href="#a3b49e5dc15d04ad4a6fe29c61cfac0e8">Continua...</a><br /></td></tr>
 <tr class="separator:a3b49e5dc15d04ad4a6fe29c61cfac0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7939def4a4cbf27f7c317431742d0b3b"><td class="memItemLeft" align="right" valign="top">IntRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMacchina.html#a7939def4a4cbf27f7c317431742d0b3b">colliderDx</a></td></tr>
+<tr class="memdesc:a7939def4a4cbf27f7c317431742d0b3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collider destro.  <a href="#a7939def4a4cbf27f7c317431742d0b3b">Continua...</a><br /></td></tr>
 <tr class="separator:a7939def4a4cbf27f7c317431742d0b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa0787a5f09a389f2637e9c32e8f63c3"><td class="memItemLeft" align="right" valign="top">IntRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMacchina.html#aaa0787a5f09a389f2637e9c32e8f63c3">colliderSx</a></td></tr>
+<tr class="memdesc:aaa0787a5f09a389f2637e9c32e8f63c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collider sinistro.  <a href="#aaa0787a5f09a389f2637e9c32e8f63c3">Continua...</a><br /></td></tr>
 <tr class="separator:aaa0787a5f09a389f2637e9c32e8f63c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a256bdeaa875ebf70ab4381512c7cdc77"><td class="memItemLeft" align="right" valign="top">IntRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMacchina.html#a256bdeaa875ebf70ab4381512c7cdc77">colliderUp</a></td></tr>
+<tr class="memdesc:a256bdeaa875ebf70ab4381512c7cdc77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collider in alto.  <a href="#a256bdeaa875ebf70ab4381512c7cdc77">Continua...</a><br /></td></tr>
 <tr class="separator:a256bdeaa875ebf70ab4381512c7cdc77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c429f25fa9ea489aea298517d50cc97"><td class="memItemLeft" align="right" valign="top">IntRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMacchina.html#a2c429f25fa9ea489aea298517d50cc97">colliderDown</a></td></tr>
+<tr class="memdesc:a2c429f25fa9ea489aea298517d50cc97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collider in basso.  <a href="#a2c429f25fa9ea489aea298517d50cc97">Continua...</a><br /></td></tr>
 <tr class="separator:a2c429f25fa9ea489aea298517d50cc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7f4f6c2f9580e21269df86cca48eede"><td class="memItemLeft" align="right" valign="top">IntRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMacchina.html#ae7f4f6c2f9580e21269df86cca48eede">collider</a></td></tr>
+<tr class="memdesc:ae7f4f6c2f9580e21269df86cca48eede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collider dello sprite.  <a href="#ae7f4f6c2f9580e21269df86cca48eede">Continua...</a><br /></td></tr>
 <tr class="separator:ae7f4f6c2f9580e21269df86cca48eede"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ffd413340095204d66c1573b0d44674"><td class="memItemLeft" align="right" valign="top">RectangleShape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMacchina.html#a3ffd413340095204d66c1573b0d44674">globo</a></td></tr>
-<tr class="separator:a3ffd413340095204d66c1573b0d44674"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a264d4ac341d4413777140ddaf6792526"><td class="memItemLeft" align="right" valign="top">RectangleShape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMacchina.html#a264d4ac341d4413777140ddaf6792526">sx</a></td></tr>
-<tr class="separator:a264d4ac341d4413777140ddaf6792526"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae536d599306d90d86133412e40e12c82"><td class="memItemLeft" align="right" valign="top">RectangleShape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMacchina.html#ae536d599306d90d86133412e40e12c82">dx</a></td></tr>
-<tr class="separator:ae536d599306d90d86133412e40e12c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47f6bae08a4ddbb54b2f780f6b467f53"><td class="memItemLeft" align="right" valign="top">RectangleShape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMacchina.html#a47f6bae08a4ddbb54b2f780f6b467f53">up</a></td></tr>
-<tr class="separator:a47f6bae08a4ddbb54b2f780f6b467f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40dbd21c67e9090152adb9fced7870f0"><td class="memItemLeft" align="right" valign="top">RectangleShape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMacchina.html#a40dbd21c67e9090152adb9fced7870f0">down</a></td></tr>
-<tr class="separator:a40dbd21c67e9090152adb9fced7870f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a720f5b512305cb88339f7b2212af610c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMacchina.html#a720f5b512305cb88339f7b2212af610c">drawable</a> = false</td></tr>
+<tr class="memdesc:a720f5b512305cb88339f7b2212af610c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Se la macchina è disegnabile.  <a href="#a720f5b512305cb88339f7b2212af610c">Continua...</a><br /></td></tr>
 <tr class="separator:a720f5b512305cb88339f7b2212af610c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc52f909043aaf1401a9b26bdeac27e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMacchina.html">Macchina</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMacchina.html#acc52f909043aaf1401a9b26bdeac27e7">stoppedBy</a> = NULL</td></tr>
+<tr class="memdesc:acc52f909043aaf1401a9b26bdeac27e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puntatore alla macchina che ha fermato la macchina corrente.  <a href="#acc52f909043aaf1401a9b26bdeac27e7">Continua...</a><br /></td></tr>
 <tr class="separator:acc52f909043aaf1401a9b26bdeac27e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -188,7 +191,7 @@ Attributi pubblici statici</h2></td></tr>
 <tr class="separator:a473232c6192f3d0f1838da5bb0c6ae66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrizione dettagliata</h2>
-<div class="textblock"><p>La classe <a class="el" href="classMacchina.html" title="La classe Macchina rappresenta il veicolo che viene posizionato sulla map. ">Macchina</a> rappresenta il veicolo che viene posizionato sulla map. </p>
+<div class="textblock"><p>La classe <a class="el" href="classMacchina.html" title="La classe Macchina rappresenta il veicolo che viene posizionato sulla mappa. ">Macchina</a> rappresenta il veicolo che viene posizionato sulla mappa. </p>
 <p>Ogni macchina ha una sua posizione, un colore e la direzione in cui deve viaggiare. </p>
 </div><h2 class="groupheader">Documentazione dei costruttori e dei distruttori</h2>
 <a class="anchor" id="a0247240ef384a80b2734c07f686d2d95"></a>
@@ -205,9 +208,7 @@ Attributi pubblici statici</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Costruttore che inizializza una macchina senza specificare la posizione. </p>
-<div class="fragment"><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    </div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="Debug_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(<a class="code" href="Debug_8h.html#aa5d6e791d48f2ad5338064093822cfaa">PRINT</a>(<span class="stringliteral">&quot;Costruzione macchina&quot;</span>));</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    initMacchina();</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div><div class="ttc" id="Debug_8h_html_aa5d6e791d48f2ad5338064093822cfaa"><div class="ttname"><a href="Debug_8h.html#aa5d6e791d48f2ad5338064093822cfaa">PRINT</a></div><div class="ttdeci">#define PRINT(a)</div><div class="ttdef"><b>Definition:</b> Debug.h:16</div></div>
-<div class="ttc" id="Debug_8h_html_a330bea9b36f638349fec0d06c8ab4c38"><div class="ttname"><a href="Debug_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a></div><div class="ttdeci">#define D1(a)</div><div class="ttdef"><b>Definition:</b> Debug.h:13</div></div>
-</div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    initMacchina();</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a23bcbc7adcadc041be7a572544065d98"></a>
@@ -231,7 +232,7 @@ Attributi pubblici statici</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    initMacchina();</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classMacchina.html#ab90898371746c74d99bd5bc25e9dd51b">setPosition</a>(pos);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    updateColliders();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div><div class="ttc" id="classMacchina_html_ab90898371746c74d99bd5bc25e9dd51b"><div class="ttname"><a href="classMacchina.html#ab90898371746c74d99bd5bc25e9dd51b">Macchina::setPosition</a></div><div class="ttdeci">void setPosition(Vector2i pos)</div><div class="ttdoc">Imposta la posizione della macchina. </div><div class="ttdef"><b>Definition:</b> Macchina.cc:38</div></div>
+<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    initMacchina();</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classMacchina.html#ab90898371746c74d99bd5bc25e9dd51b">setPosition</a>(pos);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    updateColliders();</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div><div class="ttc" id="classMacchina_html_ab90898371746c74d99bd5bc25e9dd51b"><div class="ttname"><a href="classMacchina.html#ab90898371746c74d99bd5bc25e9dd51b">Macchina::setPosition</a></div><div class="ttdeci">void setPosition(Vector2i pos)</div><div class="ttdoc">Imposta la posizione della macchina. </div><div class="ttdef"><b>Definition:</b> Macchina.cc:38</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -247,9 +248,9 @@ Attributi pubblici statici</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="Debug_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(<a class="code" href="Debug_8h.html#aa5d6e791d48f2ad5338064093822cfaa">PRINT</a>(<span class="stringliteral">&quot;Distruzione macchina&quot;</span>));</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div><div class="ttc" id="Debug_8h_html_aa5d6e791d48f2ad5338064093822cfaa"><div class="ttname"><a href="Debug_8h.html#aa5d6e791d48f2ad5338064093822cfaa">PRINT</a></div><div class="ttdeci">#define PRINT(a)</div><div class="ttdef"><b>Definition:</b> Debug.h:16</div></div>
-<div class="ttc" id="Debug_8h_html_a330bea9b36f638349fec0d06c8ab4c38"><div class="ttname"><a href="Debug_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a></div><div class="ttdeci">#define D1(a)</div><div class="ttdef"><b>Definition:</b> Debug.h:13</div></div>
-</div><!-- fragment -->
+
+<p>Distruttore. </p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentazione delle funzioni membro</h2>
@@ -268,15 +269,16 @@ Attributi pubblici statici</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Cambia la direzione in cui la macchina deve muoversi. </p>
-<p>Non permette di fermare la macchina. </p><dl class="params"><dt>Parametri</dt><dd>
+<p>Non permette di fermare la macchina.</p>
+<dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dir</td><td>Nuova direzione della macchina </td></tr>
+    <tr><td class="paramname">dir</td><td>Nuova direzione della macchina. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Restituisce</dt><dd>true se la direzione è stata cambiata, false se la direzione non era valida. </dd></dl>
 <div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> (dir == <a class="code" href="Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3a9a116c50d133c8648404081885194300">Direzione::ND</a> || dir == moving)</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="classMacchina.html#a3b49e5dc15d04ad4a6fe29c61cfac0e8">currentDir</a> = dir;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    moving = dir;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div><div class="ttc" id="Direzione_8h_html_a06651acb4861207008f70d64f1a6c4c3a9a116c50d133c8648404081885194300"><div class="ttname"><a href="Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3a9a116c50d133c8648404081885194300">Direzione::ND</a></div></div>
-<div class="ttc" id="classMacchina_html_a3b49e5dc15d04ad4a6fe29c61cfac0e8"><div class="ttname"><a href="classMacchina.html#a3b49e5dc15d04ad4a6fe29c61cfac0e8">Macchina::currentDir</a></div><div class="ttdeci">Direzione currentDir</div><div class="ttdef"><b>Definition:</b> Macchina.h:26</div></div>
+<div class="ttc" id="classMacchina_html_a3b49e5dc15d04ad4a6fe29c61cfac0e8"><div class="ttname"><a href="classMacchina.html#a3b49e5dc15d04ad4a6fe29c61cfac0e8">Macchina::currentDir</a></div><div class="ttdeci">Direzione currentDir</div><div class="ttdoc">Direzione corrente. </div><div class="ttdef"><b>Definition:</b> Macchina.h:32</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -297,15 +299,15 @@ Attributi pubblici statici</h2></td></tr>
 <p>Copia le informazioni della macchina passata come parametro nella macchina attuale. </p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
-    <tr><td class="paramname">m</td><td><a class="el" href="classMacchina.html" title="La classe Macchina rappresenta il veicolo che viene posizionato sulla map. ">Macchina</a> contenente le informazioni da copiare </td></tr>
+    <tr><td class="paramname">m</td><td><a class="el" href="classMacchina.html" title="La classe Macchina rappresenta il veicolo che viene posizionato sulla mappa. ">Macchina</a> contenente le informazioni da copiare </td></tr>
   </table>
   </dd>
 </dl>
 <div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classMacchina.html#ab90898371746c74d99bd5bc25e9dd51b">setPosition</a>(m.<a class="code" href="classMacchina.html#ac56408020c0881ca5306069a9ea05134">getPosition</a>());</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classMacchina.html#a4af3af8e4481f82a410a46c6f08ea0c6">setColor</a>(m.<a class="code" href="classMacchina.html#afa650e0d066417d0a5fa7586c2575cde">getColor</a>());</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    moving = m.moving;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classMacchina.html#a3b49e5dc15d04ad4a6fe29c61cfac0e8">currentDir</a> = m.<a class="code" href="classMacchina.html#a3b49e5dc15d04ad4a6fe29c61cfac0e8">currentDir</a>;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div><div class="ttc" id="classMacchina_html_afa650e0d066417d0a5fa7586c2575cde"><div class="ttname"><a href="classMacchina.html#afa650e0d066417d0a5fa7586c2575cde">Macchina::getColor</a></div><div class="ttdeci">Color getColor()</div><div class="ttdoc">Restituisce il colore attuale della macchina. </div><div class="ttdef"><b>Definition:</b> Macchina.cc:53</div></div>
-<div class="ttc" id="classMacchina_html_ac56408020c0881ca5306069a9ea05134"><div class="ttname"><a href="classMacchina.html#ac56408020c0881ca5306069a9ea05134">Macchina::getPosition</a></div><div class="ttdeci">Vector2i getPosition()</div><div class="ttdoc">Restituisce un Vector2i che contiene le coordinate. </div><div class="ttdef"><b>Definition:</b> Macchina.h:65</div></div>
+<div class="ttc" id="classMacchina_html_ac56408020c0881ca5306069a9ea05134"><div class="ttname"><a href="classMacchina.html#ac56408020c0881ca5306069a9ea05134">Macchina::getPosition</a></div><div class="ttdeci">Vector2i getPosition()</div><div class="ttdoc">Restituisce un Vector2i che contiene le coordinate. </div><div class="ttdef"><b>Definition:</b> Macchina.h:88</div></div>
 <div class="ttc" id="classMacchina_html_ab90898371746c74d99bd5bc25e9dd51b"><div class="ttname"><a href="classMacchina.html#ab90898371746c74d99bd5bc25e9dd51b">Macchina::setPosition</a></div><div class="ttdeci">void setPosition(Vector2i pos)</div><div class="ttdoc">Imposta la posizione della macchina. </div><div class="ttdef"><b>Definition:</b> Macchina.cc:38</div></div>
 <div class="ttc" id="classMacchina_html_a4af3af8e4481f82a410a46c6f08ea0c6"><div class="ttname"><a href="classMacchina.html#a4af3af8e4481f82a410a46c6f08ea0c6">Macchina::setColor</a></div><div class="ttdeci">void setColor(Color c)</div><div class="ttdoc">Imposta il colore della macchina col colore passato come parametro. </div><div class="ttdef"><b>Definition:</b> Macchina.cc:43</div></div>
-<div class="ttc" id="classMacchina_html_a3b49e5dc15d04ad4a6fe29c61cfac0e8"><div class="ttname"><a href="classMacchina.html#a3b49e5dc15d04ad4a6fe29c61cfac0e8">Macchina::currentDir</a></div><div class="ttdeci">Direzione currentDir</div><div class="ttdef"><b>Definition:</b> Macchina.h:26</div></div>
+<div class="ttc" id="classMacchina_html_a3b49e5dc15d04ad4a6fe29c61cfac0e8"><div class="ttname"><a href="classMacchina.html#a3b49e5dc15d04ad4a6fe29c61cfac0e8">Macchina::currentDir</a></div><div class="ttdeci">Direzione currentDir</div><div class="ttdoc">Direzione corrente. </div><div class="ttdef"><b>Definition:</b> Macchina.h:32</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -324,7 +326,9 @@ Attributi pubblici statici</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Disegna sul widget la macchina. </p>
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//  widget.draw(globo);</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    </div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    widget.draw(shape);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">/*  widget.draw(sx);</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">    widget.draw(dx);</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">    widget.draw(up);</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">    widget.draw(down);</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">    */</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    </div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div></div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="Debug_8h.html#a975397c373ae2a9dc28d0297fa18da56">D2</a>(</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        widget.draw(global);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    );</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    widget.draw(shape);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="Debug_8h.html#ac9f9e36799ba12832fda1e6716a67167">D3</a>(</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        widget.draw(sx);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        widget.draw(dx);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        widget.draw(up);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        widget.draw(down);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    );</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    </div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div><div class="ttc" id="Debug_8h_html_ac9f9e36799ba12832fda1e6716a67167"><div class="ttname"><a href="Debug_8h.html#ac9f9e36799ba12832fda1e6716a67167">D3</a></div><div class="ttdeci">#define D3(a)</div><div class="ttdef"><b>Definition:</b> Debug.h:15</div></div>
+<div class="ttc" id="Debug_8h_html_a975397c373ae2a9dc28d0297fa18da56"><div class="ttname"><a href="Debug_8h.html#a975397c373ae2a9dc28d0297fa18da56">D2</a></div><div class="ttdeci">#define D2(a)</div><div class="ttdef"><b>Definition:</b> Debug.h:14</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="afa650e0d066417d0a5fa7586c2575cde"></a>
@@ -383,8 +387,8 @@ Attributi pubblici statici</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Restituisce un Vector2i che contiene le coordinate. </p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                  {</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> Vector2i(<a class="code" href="classMacchina.html#aabfd6d2e115acc5edeaf1ab56de9ad55">getShape</a>().<a class="code" href="classMacchina.html#ac56408020c0881ca5306069a9ea05134">getPosition</a>().x, <a class="code" href="classMacchina.html#aabfd6d2e115acc5edeaf1ab56de9ad55">getShape</a>().<a class="code" href="classMacchina.html#ac56408020c0881ca5306069a9ea05134">getPosition</a>().y);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div><div class="ttc" id="classMacchina_html_ac56408020c0881ca5306069a9ea05134"><div class="ttname"><a href="classMacchina.html#ac56408020c0881ca5306069a9ea05134">Macchina::getPosition</a></div><div class="ttdeci">Vector2i getPosition()</div><div class="ttdoc">Restituisce un Vector2i che contiene le coordinate. </div><div class="ttdef"><b>Definition:</b> Macchina.h:65</div></div>
-<div class="ttc" id="classMacchina_html_aabfd6d2e115acc5edeaf1ab56de9ad55"><div class="ttname"><a href="classMacchina.html#aabfd6d2e115acc5edeaf1ab56de9ad55">Macchina::getShape</a></div><div class="ttdeci">RectangleShape getShape()</div><div class="ttdef"><b>Definition:</b> Macchina.cc:48</div></div>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    {</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span> Vector2i(<a class="code" href="classMacchina.html#aabfd6d2e115acc5edeaf1ab56de9ad55">getShape</a>().<a class="code" href="classMacchina.html#ac56408020c0881ca5306069a9ea05134">getPosition</a>().x, <a class="code" href="classMacchina.html#aabfd6d2e115acc5edeaf1ab56de9ad55">getShape</a>().<a class="code" href="classMacchina.html#ac56408020c0881ca5306069a9ea05134">getPosition</a>().y);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div><div class="ttc" id="classMacchina_html_ac56408020c0881ca5306069a9ea05134"><div class="ttname"><a href="classMacchina.html#ac56408020c0881ca5306069a9ea05134">Macchina::getPosition</a></div><div class="ttdeci">Vector2i getPosition()</div><div class="ttdoc">Restituisce un Vector2i che contiene le coordinate. </div><div class="ttdef"><b>Definition:</b> Macchina.h:88</div></div>
+<div class="ttc" id="classMacchina_html_aabfd6d2e115acc5edeaf1ab56de9ad55"><div class="ttname"><a href="classMacchina.html#aabfd6d2e115acc5edeaf1ab56de9ad55">Macchina::getShape</a></div><div class="ttdeci">RectangleShape getShape()</div><div class="ttdoc">Restituisce lo sprite della macchina. </div><div class="ttdef"><b>Definition:</b> Macchina.cc:48</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -400,6 +404,8 @@ Attributi pubblici statici</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Restituisce lo sprite della macchina. </p>
 <div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> shape;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
@@ -520,6 +526,8 @@ Attributi pubblici statici</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Collider dello sprite. </p>
+
 </div>
 </div>
 <a class="anchor" id="a2c429f25fa9ea489aea298517d50cc97"></a>
@@ -531,6 +539,8 @@ Attributi pubblici statici</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Collider in basso. </p>
 
 </div>
 </div>
@@ -544,6 +554,8 @@ Attributi pubblici statici</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Collider destro. </p>
+
 </div>
 </div>
 <a class="anchor" id="aaa0787a5f09a389f2637e9c32e8f63c3"></a>
@@ -555,6 +567,8 @@ Attributi pubblici statici</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Collider sinistro. </p>
 
 </div>
 </div>
@@ -568,6 +582,8 @@ Attributi pubblici statici</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Collider in alto. </p>
+
 </div>
 </div>
 <a class="anchor" id="a87cd9fca72db23ac2a652ead829935d6"></a>
@@ -579,6 +595,8 @@ Attributi pubblici statici</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Coordinate del blocco su cui si trova la macchina. </p>
 
 </div>
 </div>
@@ -592,17 +610,7 @@ Attributi pubblici statici</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a40dbd21c67e9090152adb9fced7870f0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RectangleShape Macchina::down</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Direzione corrente. </p>
 
 </div>
 </div>
@@ -616,29 +624,7 @@ Attributi pubblici statici</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="ae536d599306d90d86133412e40e12c82"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RectangleShape Macchina::dx</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3ffd413340095204d66c1573b0d44674"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RectangleShape Macchina::globo</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Se la macchina è disegnabile. </p>
 
 </div>
 </div>
@@ -652,6 +638,8 @@ Attributi pubblici statici</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Coordinate del blocco da raggiungere. </p>
+
 </div>
 </div>
 <a class="anchor" id="ac670638e99a32d4d13723b90a7c3894c"></a>
@@ -663,6 +651,8 @@ Attributi pubblici statici</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Direzione che dovrà intraprendere per raggiungere il prossimo blocco. </p>
 
 </div>
 </div>
@@ -712,29 +702,7 @@ Attributi pubblici statici</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a264d4ac341d4413777140ddaf6792526"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RectangleShape Macchina::sx</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a47f6bae08a4ddbb54b2f780f6b467f53"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RectangleShape Macchina::up</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Puntatore alla macchina che ha fermato la macchina corrente. </p>
 
 </div>
 </div>
@@ -745,7 +713,7 @@ Attributi pubblici statici</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generato Dom 9 Ott 2016 16:43:22 per Traffic-Simulator da &#160;<a href="http://www.doxygen.org/index.html">
+Generato Dom 9 Ott 2016 21:31:02 per Traffic-Simulator da &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -121,6 +121,7 @@ Membri pubblici</h2></td></tr>
 <tr class="memdesc:aa9a56967744c89690825173ad6352888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restituisce il primo elemento corrispondente ai valori passati come parametro.  <a href="#aa9a56967744c89690825173ad6352888">Continua...</a><br /></td></tr>
 <tr class="separator:aa9a56967744c89690825173ad6352888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b4676e88c0433be2319c71ce2e6059d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector2i__List.html#a5b4676e88c0433be2319c71ce2e6059d">copy</a> (<a class="el" href="classVector2i__List.html">Vector2i_List</a> &amp;source)</td></tr>
+<tr class="memdesc:a5b4676e88c0433be2319c71ce2e6059d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copia gli elementi della lista passata come parametro sulla lista attuale.  <a href="#a5b4676e88c0433be2319c71ce2e6059d">Continua...</a><br /></td></tr>
 <tr class="separator:a5b4676e88c0433be2319c71ce2e6059d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84bca363355e2a246715e7a61a51a7bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector2i__List.html#a84bca363355e2a246715e7a61a51a7bc">clean</a> ()</td></tr>
 <tr class="memdesc:a84bca363355e2a246715e7a61a51a7bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Svuota la lista, cancellando tutti gli elementi.  <a href="#a84bca363355e2a246715e7a61a51a7bc">Continua...</a><br /></td></tr>
@@ -129,7 +130,7 @@ Membri pubblici</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Descrizione dettagliata</h2>
 <div class="textblock"><p>La classe <a class="el" href="classVector2i__List.html" title="La classe Vector2i_List rappresenta una lista di elementi di tipo Vector2i, ereditati da SFML...">Vector2i_List</a> rappresenta una lista di elementi di tipo Vector2i, ereditati da SFML. </p>
 <p>Gli elementi Vector2i sono vettori che contengono 2 numeri interi. La classe tiene traccia del numero di elementi presenti nella lista.</p>
-<p>I metodi disponibili sono quelli basici delle liste: inserimento, estrazione, ricerca </p>
+<p>I metodi disponibili sono quelli basici delle liste: inserimento, estrazione, ricerca. </p>
 </div><h2 class="groupheader">Documentazione dei costruttori e dei distruttori</h2>
 <a class="anchor" id="a5bc769f8555c0c431e3bcb149bd3702e"></a>
 <div class="memitem">
@@ -165,7 +166,7 @@ Membri pubblici</h2></td></tr>
 <p>Costruttore che inizializza una lista con un elemento passato per parametro. </p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
-    <tr><td class="paramname">r</td><td>Elemento iniziale </td></tr>
+    <tr><td class="paramname">r</td><td>Elemento iniziale. </td></tr>
   </table>
   </dd>
 </dl>
@@ -223,8 +224,16 @@ Membri pubblici</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Copia gli elementi della lista passata come parametro sulla lista attuale. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Lista sorgente. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; source.<a class="code" href="classVector2i__List.html#a1514c71075a5aa584bc9dc3556bb3eab">count</a>(); i++)</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="classVector2i__List.html#a2af75a7e14b5237c105cea5c4939c4e7">insert</a>(source.<a class="code" href="classVector2i__List.html#a482f3872e9ff43bbf89f719e542e5bb1">get</a>(i, <span class="keyword">false</span>));</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div><div class="ttc" id="classVector2i__List_html_a482f3872e9ff43bbf89f719e542e5bb1"><div class="ttname"><a href="classVector2i__List.html#a482f3872e9ff43bbf89f719e542e5bb1">Vector2i_List::get</a></div><div class="ttdeci">Vector2i get(int index, bool del)</div><div class="ttdoc">Restituisce l&amp;#39;elemento corrispondente all&amp;#39;indice passato come parametro. </div><div class="ttdef"><b>Definition:</b> Vector2i_List.cc:52</div></div>
-<div class="ttc" id="classVector2i__List_html_a1514c71075a5aa584bc9dc3556bb3eab"><div class="ttname"><a href="classVector2i__List.html#a1514c71075a5aa584bc9dc3556bb3eab">Vector2i_List::count</a></div><div class="ttdeci">int count()</div><div class="ttdoc">Restituisce il numero di elementi nella lista. </div><div class="ttdef"><b>Definition:</b> Vector2i_List.h:43</div></div>
+<div class="ttc" id="classVector2i__List_html_a1514c71075a5aa584bc9dc3556bb3eab"><div class="ttname"><a href="classVector2i__List.html#a1514c71075a5aa584bc9dc3556bb3eab">Vector2i_List::count</a></div><div class="ttdeci">int count()</div><div class="ttdoc">Restituisce il numero di elementi nella lista. </div><div class="ttdef"><b>Definition:</b> Vector2i_List.h:44</div></div>
 <div class="ttc" id="classVector2i__List_html_a2af75a7e14b5237c105cea5c4939c4e7"><div class="ttname"><a href="classVector2i__List.html#a2af75a7e14b5237c105cea5c4939c4e7">Vector2i_List::insert</a></div><div class="ttdeci">void insert(Vector2i r)</div><div class="ttdoc">Inserisce un elemento nella lista. </div><div class="ttdef"><b>Definition:</b> Vector2i_List.cc:26</div></div>
 </div><!-- fragment -->
 </div>
@@ -251,7 +260,7 @@ Membri pubblici</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Restituisce il numero di elementi nella lista. </p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> num_nodi;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div></div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> num_nodi;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a482f3872e9ff43bbf89f719e542e5bb1"></a>
@@ -282,12 +291,12 @@ Membri pubblici</h2></td></tr>
 <p>È necessario indicare se l'elemento deve essere rimosso o mantenuto.</p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>Indice nella lista dell'elemento </td></tr>
-    <tr><td class="paramname">del</td><td>True se l'elemento deve essere cancellato. False altrimenti </td></tr>
+    <tr><td class="paramname">index</td><td>Indice nella lista dell'elemento. </td></tr>
+    <tr><td class="paramname">del</td><td>True se l'elemento deve essere cancellato. False altrimenti. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Restituisce</dt><dd>Se l'elemento esiste nella lista, lo restituisce. Altrimenti restiuisce un vettore (-1, -1) </dd></dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Se l'elemento esiste nella lista, lo restituisce. Altrimenti restiuisce un vettore (-1, -1). </dd></dl>
 <div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (index &gt;= num_nodi) <span class="keywordflow">return</span> Vector2i(-1, -1);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="structVector2i__Node.html">Vector2i_Node</a> *t = root;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="structVector2i__Node.html">Vector2i_Node</a> *previous = NULL;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; index; i++) {</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        previous = t;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        t = t-&gt;<a class="code" href="structVector2i__Node.html#a27ce6ebd2bc8be7e15c8cd9c229441f5">next</a>;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    Vector2i temp = t-&gt;<a class="code" href="structVector2i__Node.html#a2fced9eccfc6f2b87dfcd9f6cf72453d">node</a>;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span> (del) {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">if</span> (t == root)</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            root = t-&gt;<a class="code" href="structVector2i__Node.html#a27ce6ebd2bc8be7e15c8cd9c229441f5">next</a>;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">else</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            previous-&gt;<a class="code" href="structVector2i__Node.html#a27ce6ebd2bc8be7e15c8cd9c229441f5">next</a> = t-&gt;<a class="code" href="structVector2i__Node.html#a27ce6ebd2bc8be7e15c8cd9c229441f5">next</a>;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">delete</span> t;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        num_nodi--;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        </div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> temp;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div><div class="ttc" id="structVector2i__Node_html_a2fced9eccfc6f2b87dfcd9f6cf72453d"><div class="ttname"><a href="structVector2i__Node.html#a2fced9eccfc6f2b87dfcd9f6cf72453d">Vector2i_Node::node</a></div><div class="ttdeci">Vector2i node</div><div class="ttdef"><b>Definition:</b> Vector2i_List.h:11</div></div>
 <div class="ttc" id="structVector2i__Node_html"><div class="ttname"><a href="structVector2i__Node.html">Vector2i_Node</a></div><div class="ttdoc">Struttura che rappresenta il singolo nodo della lista. </div><div class="ttdef"><b>Definition:</b> Vector2i_List.h:10</div></div>
 <div class="ttc" id="structVector2i__Node_html_a27ce6ebd2bc8be7e15c8cd9c229441f5"><div class="ttname"><a href="structVector2i__Node.html#a27ce6ebd2bc8be7e15c8cd9c229441f5">Vector2i_Node::next</a></div><div class="ttdeci">Vector2i_Node * next</div><div class="ttdef"><b>Definition:</b> Vector2i_List.h:12</div></div>
@@ -328,13 +337,13 @@ Membri pubblici</h2></td></tr>
 <p>È necessario indicare se l'elemento deve essere rimosso o mantenuto.</p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>Valore x del vettore da cercare </td></tr>
-    <tr><td class="paramname">y</td><td>Valore y del vettore da cercare </td></tr>
-    <tr><td class="paramname">del</td><td>True se l'elemento deve essere cancellato. False altrimenti </td></tr>
+    <tr><td class="paramname">x</td><td>Valore x del vettore da cercare. </td></tr>
+    <tr><td class="paramname">y</td><td>Valore y del vettore da cercare. </td></tr>
+    <tr><td class="paramname">del</td><td>True se l'elemento deve essere cancellato. False altrimenti. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Restituisce</dt><dd>Se l'elemento esiste nella lista, lo restituisce. Altrimenti restiuisce un vettore (-1, -1) </dd></dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Se l'elemento esiste nella lista, lo restituisce. Altrimenti restiuisce un vettore (-1, -1). </dd></dl>
 <div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="structVector2i__Node.html">Vector2i_Node</a> *t = root;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="structVector2i__Node.html">Vector2i_Node</a> *previous = NULL;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span> (t == NULL) <span class="keywordflow">return</span> Vector2i(-1, -1);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">while</span> (t != NULL &amp;&amp; (t-&gt;<a class="code" href="structVector2i__Node.html#a2fced9eccfc6f2b87dfcd9f6cf72453d">node</a>.x != x || t-&gt;<a class="code" href="structVector2i__Node.html#a2fced9eccfc6f2b87dfcd9f6cf72453d">node</a>.y != y))</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        previous = t;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        t = t-&gt;<a class="code" href="structVector2i__Node.html#a27ce6ebd2bc8be7e15c8cd9c229441f5">next</a>;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (t != NULL)</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    {</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        Vector2i temp = t-&gt;<a class="code" href="structVector2i__Node.html#a2fced9eccfc6f2b87dfcd9f6cf72453d">node</a>;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">if</span> (del)</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        {</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">if</span> (t == root)</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                root = t-&gt;<a class="code" href="structVector2i__Node.html#a27ce6ebd2bc8be7e15c8cd9c229441f5">next</a>;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">else</span></div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                previous-&gt;<a class="code" href="structVector2i__Node.html#a27ce6ebd2bc8be7e15c8cd9c229441f5">next</a> = t-&gt;<a class="code" href="structVector2i__Node.html#a27ce6ebd2bc8be7e15c8cd9c229441f5">next</a>;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keyword">delete</span> t;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            num_nodi--;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">return</span> temp;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span> Vector2i(-1, -1);</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div><div class="ttc" id="structVector2i__Node_html_a2fced9eccfc6f2b87dfcd9f6cf72453d"><div class="ttname"><a href="structVector2i__Node.html#a2fced9eccfc6f2b87dfcd9f6cf72453d">Vector2i_Node::node</a></div><div class="ttdeci">Vector2i node</div><div class="ttdef"><b>Definition:</b> Vector2i_List.h:11</div></div>
 <div class="ttc" id="structVector2i__Node_html"><div class="ttname"><a href="structVector2i__Node.html">Vector2i_Node</a></div><div class="ttdoc">Struttura che rappresenta il singolo nodo della lista. </div><div class="ttdef"><b>Definition:</b> Vector2i_List.h:10</div></div>
 <div class="ttc" id="structVector2i__Node_html_a27ce6ebd2bc8be7e15c8cd9c229441f5"><div class="ttname"><a href="structVector2i__Node.html#a27ce6ebd2bc8be7e15c8cd9c229441f5">Vector2i_Node::next</a></div><div class="ttdeci">Vector2i_Node * next</div><div class="ttdef"><b>Definition:</b> Vector2i_List.h:12</div></div>
@@ -358,7 +367,7 @@ Membri pubblici</h2></td></tr>
 <p>Inserisce un elemento nella lista. </p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
-    <tr><td class="paramname">r</td><td>Elemento da inserire </td></tr>
+    <tr><td class="paramname">r</td><td>Elemento da inserire. </td></tr>
   </table>
   </dd>
 </dl>
@@ -394,7 +403,7 @@ Membri pubblici</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generato Dom 9 Ott 2016 16:43:22 per Traffic-Simulator da &#160;<a href="http://www.doxygen.org/index.html">
+Generato Dom 9 Ott 2016 21:31:02 per Traffic-Simulator da &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

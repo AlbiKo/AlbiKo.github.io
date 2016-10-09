@@ -16,10 +16,9 @@ var searchData=
   ['direzione_5flist_2eh',['Direzione_List.h',['../Direzione__List_8h.html',1,'']]],
   ['direzione_5fnode',['Direzione_Node',['../structDirezione__Node.html',1,'']]],
   ['display',['display',['../classSFMLWidget.html#ac52e0454de773776511736d885f4655a',1,'SFMLWidget']]],
-  ['down',['down',['../classMacchina.html#a40dbd21c67e9090152adb9fced7870f0',1,'Macchina']]],
   ['draw',['draw',['../classBlocco.html#a603a6840736bf521e675bb426650cf1b',1,'Blocco::draw()'],['../classCurva.html#a19e7a948919b31d4223d46c3cb3ea357',1,'Curva::draw()'],['../classIncrocio3.html#a2be964e9883b9c7cbf67005b5c025c0e',1,'Incrocio3::draw()'],['../classIncrocio4.html#afa75d8b83b6cd2276ec5e8340f876786',1,'Incrocio4::draw()'],['../classMacchina.html#abc4c7aa44b378cea9607511eec89149c',1,'Macchina::draw()'],['../classMappa.html#acdcd979263994ef2e3c6db720374f5c4',1,'Mappa::draw()'],['../classRettilineo.html#a54df50dac95fccaeab646dc204a9356c',1,'Rettilineo::draw()']]],
   ['drawable',['drawable',['../classMacchina.html#a720f5b512305cb88339f7b2212af610c',1,'Macchina']]],
-  ['dx',['dx',['../classMacchina.html#ae536d599306d90d86133412e40e12c82',1,'Macchina::dx()'],['../Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3a72a530b2433264cef373d8fcca5662c1',1,'DX():&#160;Direzione.h']]],
+  ['dx',['DX',['../Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3a72a530b2433264cef373d8fcca5662c1',1,'Direzione.h']]],
   ['dx_5fto_5fdown',['DX_TO_DOWN',['../TipoBlocco_8h.html#a75f7bedc430cc0d3d77b613d74066015a5221f8f26040825f428af7cab58256fb',1,'TipoBlocco.h']]],
   ['dx_5fto_5fup',['DX_TO_UP',['../TipoBlocco_8h.html#a75f7bedc430cc0d3d77b613d74066015a57b342f838f0482b9dcb7f27d29160b4',1,'TipoBlocco.h']]]
 ];

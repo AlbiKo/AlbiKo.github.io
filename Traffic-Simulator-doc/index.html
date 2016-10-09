@@ -78,20 +78,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
 <div class="title">Traffic-Simulator. </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Questo programma gestisce il traffico stradale di un ambiente generato casualmente.<br />
- La "map" generata conterrà incroci che saranno gestiti da semafori.<br />
- I veicoli procederanno da un luogo di partenza verso una destinazione autonomamente, rispettando gli incroci e le regolazioni semaforiche.<br />
- <br />
- Benvenuti in SimCity 2000!<br />
+<div class="textblock"><p>Questo programma gestisce il traffico stradale di un ambiente generato casualmente, nella seguente modalità:<br />
+ </p><ul>
+<li>
+Posizionamento delle sorgenti </li>
+<li>
+Collegamento delle sorgenti fra di loro <ul>
+<li>
+Se rimangono sorgenti scollegate, queste vengono collegate con altre sorgenti</li>
+</ul>
+</li>
+</ul>
+<p>Consultare <a class="el" href="classMappa.html" title="La classe Mappa descrive l&#39;area di gioco rappresentata attraverso una matrice di blocchi. ">Mappa</a> per maggiori informazioni.<br />
 <br />
- NOTA: Documentazione incompleta su <a class="el" href="classBlocco.html" title="La classe blocco rappresenta il blocco generico che deve essere posizionato sulla mappa...">Blocco</a></p>
+ I veicoli procederanno da un luogo di partenza verso una destinazione autonomamente, rispettando le intersezioni regolate da semafori.<br />
+ La logica dell'applicazione è gestita da <a href="Core_8cc.html">Core</a>.</p>
 <dl class="section author"><dt>Autore</dt><dd>Daniele Corradini </dd>
 <dd>
 Alberto Beccari </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generato Dom 9 Ott 2016 16:43:22 per Traffic-Simulator da &#160;<a href="http://www.doxygen.org/index.html">
+Generato Dom 9 Ott 2016 21:31:02 per Traffic-Simulator da &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

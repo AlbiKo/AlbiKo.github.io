@@ -19,7 +19,6 @@ var searchData=
   ['getsprite',['getSprite',['../classBlocco.html#a4cfc6e34d87b2fbe731b4bf252115425',1,'Blocco']]],
   ['gettipo',['getTipo',['../classBlocco.html#a5e4512e28867d257c6eebc8e495a0c9f',1,'Blocco']]],
   ['giu',['GIU',['../Direzione_8h.html#a06651acb4861207008f70d64f1a6c4c3a37357e6a04e99ecf3bc5341eed10bf9b',1,'Direzione.h']]],
-  ['globo',['globo',['../classMacchina.html#a3ffd413340095204d66c1573b0d44674',1,'Macchina']]],
   ['graph',['Graph',['../classGraph.html',1,'Graph'],['../classGraph.html#ae4c72b8ac4d693c49800a4c7e273654f',1,'Graph::Graph()']]],
   ['graph_2ecc',['Graph.cc',['../Graph_8cc.html',1,'']]],
   ['graph_2eh',['Graph.h',['../Graph_8h.html',1,'']]],

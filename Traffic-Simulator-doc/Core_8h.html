@@ -115,10 +115,13 @@ Funzioni</h2></td></tr>
 <tr class="memdesc:a27ef1e6aeaa487bcb1fdc79cf5441ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rigenera la mappa.  <a href="#a27ef1e6aeaa487bcb1fdc79cf5441ba2">Continua...</a><br /></td></tr>
 <tr class="separator:a27ef1e6aeaa487bcb1fdc79cf5441ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dd8b820fd16d6c0ead655af537c69bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Core_8h.html#a2dd8b820fd16d6c0ead655af537c69bb">setNumCar</a> (int num)</td></tr>
+<tr class="memdesc:a2dd8b820fd16d6c0ead655af537c69bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imposta il numero massimo di macchine da spawnare.  <a href="#a2dd8b820fd16d6c0ead655af537c69bb">Continua...</a><br /></td></tr>
 <tr class="separator:a2dd8b820fd16d6c0ead655af537c69bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cf32eda73ea813cc70e819644d18b01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Core_8h.html#a9cf32eda73ea813cc70e819644d18b01">setSpawnCarTime</a> (int ms)</td></tr>
+<tr class="memdesc:a9cf32eda73ea813cc70e819644d18b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imposta il tempo che deve trascorrere fra lo spawn di una macchina e un'altra.  <a href="#a9cf32eda73ea813cc70e819644d18b01">Continua...</a><br /></td></tr>
 <tr class="separator:a9cf32eda73ea813cc70e819644d18b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af31d5b7c2fe5bc5e18010bf2e8acd0fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Core_8h.html#af31d5b7c2fe5bc5e18010bf2e8acd0fd">setSemChangeStatusTime</a> (int s)</td></tr>
+<tr class="memdesc:af31d5b7c2fe5bc5e18010bf2e8acd0fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imposta il tempo che deve trascorrere per far passare i semafori al prossimo stato.  <a href="#af31d5b7c2fe5bc5e18010bf2e8acd0fd">Continua...</a><br /></td></tr>
 <tr class="separator:af31d5b7c2fe5bc5e18010bf2e8acd0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Documentazione delle funzioni</h2>
@@ -198,6 +201,14 @@ Funzioni</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Imposta il numero massimo di macchine da spawnare. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td>Numero di macchine. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="fragment"><div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;{</div><div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    <span class="keywordflow">if</span> (num &gt;= 0)</div><div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        NUM_MACCHINE = num;</div><div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
@@ -214,6 +225,14 @@ Funzioni</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Imposta il tempo che deve trascorrere per far passare i semafori al prossimo stato. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Tempo in secondi. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="fragment"><div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;{</div><div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    <span class="keywordflow">if</span> (s &gt; 0)</div><div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        semChangeStatusTime = s;</div><div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
@@ -230,6 +249,14 @@ Funzioni</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Imposta il tempo che deve trascorrere fra lo spawn di una macchina e un'altra. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ms</td><td>Tempo in millisecondi. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="fragment"><div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;{</div><div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    <span class="keywordflow">if</span> (ms &gt; 0)</div><div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        carSpawningTime = ms / 1000.0f;</div><div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
@@ -260,7 +287,7 @@ Funzioni</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generato Dom 9 Ott 2016 16:43:22 per Traffic-Simulator da &#160;<a href="http://www.doxygen.org/index.html">
+Generato Dom 9 Ott 2016 21:31:02 per Traffic-Simulator da &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
